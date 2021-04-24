@@ -11,20 +11,39 @@ public class PlusOne {
 
     public static int[] plusOne(int[] digits) {
 
-        String strNumber = Arrays.stream(digits)
-                .mapToObj(i -> String.valueOf(i))
-                .collect(Collectors.joining());
+       int last = digits[digits.length-1];
 
+       if (last < 9){
+           digits[digits.length-1] = last+1;
+           return digits;
+       }
 
-        BigDecimal bigDecimal = new BigDecimal(strNumber);
-        BigDecimal added = bigDecimal.add(new BigDecimal(1));
+       int index = digits.length-1;
+       int remain = 0;
+       while (index >= 0){
+           if (digits[index] == 9){
+               digits[index] = 0;
+               remain = 1;
+           }else{
+               digits[index]++;
+               return digits;
+           }
+           index--;
+       }
+       if (remain == 1){
+           int[] newArr = new int[digits.length+1];
+           newArr[0] = 1;
+           System.arraycopy(digits, 0, newArr,1, digits.length);
+           return newArr;
+       }
+       return null;
 
-        String[] split = String.valueOf(added).split("");
-        return Arrays.stream(split).mapToInt(i -> Integer.parseInt(i)).toArray();
     }
 
     public static void main(String[] args) {
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println( Arrays.toString(plusOne(new int[]{9,9,9,9,9,9,9,9,9})));
+
+        System.out.println( Arrays.toString(plusOne(new int[]{1})));
+
+
     }
 }
