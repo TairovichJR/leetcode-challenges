@@ -18,7 +18,6 @@ public class LongestCommonPrefix {
 
             for (int j = 1; j <= shortest; j++) {
                 String pref = strs[i].substring(0, j);
-                System.out.println(pref);
                 if (map.containsKey(pref)){
                     Integer val = map.get(pref);
                     map.put(pref, val+1);
@@ -39,6 +38,8 @@ public class LongestCommonPrefix {
 
     public static void main(String[] args) {
 
-        System.out.println( longestCommonPrefix(new String[]{""}));
+        System.out.println( longestCommonPrefix(new String[]{"flower","flow","fluke"}));
     }
 }
+
+
