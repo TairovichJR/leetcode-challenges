@@ -34,7 +34,6 @@ public class PascalsTriangle_II {
     }
 
     public static void main(String[] args) {
-
         System.out.println(getRow(0));
     }
 }
