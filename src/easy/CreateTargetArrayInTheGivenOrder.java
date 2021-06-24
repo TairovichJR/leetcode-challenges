@@ -1,5 +1,6 @@
 package easy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -9,11 +10,12 @@ public class CreateTargetArrayInTheGivenOrder {
 
     public int[] createTargetArray(int[] nums, int[] index) {
 
-        int[] target = new int[nums.length];
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < index.length; i++) {
-            target[i] = nums[i];
+            list.add( index[i], nums[i] );
         }
-        return target;
+        int[] ints = list.stream().mapToInt(i -> i).toArray();
+        return ints;
     }
 
     public static void main(String[] args) {
