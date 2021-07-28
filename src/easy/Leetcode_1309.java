@@ -32,10 +32,7 @@ public class Leetcode_1309 {
 
     public static void main(String[] args) {
 
-        System.out.println(freqAlphabets("1326#"));
-        System.out.println(freqAlphabets("10#11#12"));
-        System.out.println(freqAlphabets("25#"));
-       // System.out.println(   String.valueOf( (char) (Integer.parseInt("26") + 96) ));
+        System.out.println(2 ^ 5 ^ 6);
     }
 
 }
