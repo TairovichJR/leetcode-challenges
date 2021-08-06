@@ -11,13 +11,11 @@ import java.util.stream.Collectors;
 public class TestQuestion {
 
     public static List<Integer> split(Integer num, Integer parts){
-
         List<Integer> list = new ArrayList<>();
         int temp = num % parts;
         for (int i = 0; i < (parts - temp); i++) {
             list.add(num/parts);
         }
-
         int res = num - list.stream().reduce(0, (a, b) -> a + b);
 
         for (int i = 0; i < (num % parts); i++) {
