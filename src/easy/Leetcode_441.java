@@ -10,21 +10,17 @@ public class Leetcode_441 {
     public static int arrangeCoins(int n) {
 
         int count = 0;
-        int sum = 0;
-
-
-        while (sum <= n){
+        int level = 1;
+        while (n >= level){
+            n -= level;
+            level++;
             count++;
-           if (sum+ count < n){
-               sum+= count;
-           }else{
-               return sum;
-           }
         }
-        return 0;
+        return count;
     }
 
      public static void main(String... args) {
 
+         System.out.println(arrangeCoins(2147483647));
     }
 }
