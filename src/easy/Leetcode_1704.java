@@ -36,20 +36,6 @@ public class Leetcode_1704 {
 //        System.out.println(halvesAreAlike(s));
 
 
-        Car car = new Car("Hyundai");
-        changeName(car);
-        System.out.println(car.name);
-    }
 
-
-    public static void changeName (Car car){
-        car = new Car("BMW");
-    }
-}
-
-class  Car{
-    String name ;
-    public Car(String name){
-        this.name =name;
     }
 }
