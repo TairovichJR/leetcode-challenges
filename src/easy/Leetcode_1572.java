@@ -6,13 +6,9 @@ package easy;
 public class Leetcode_1572 {
 
     public static int diagonalSum(int[][] mat) {
-
         int sum = 0;
         for (int i = 0, j = 0, k = mat.length-1; i < mat.length; i++, j++, k--) {
-            if (j != k)
-                sum += mat[i][j] + mat[i][k];
-            else
-                sum += mat[i][j];
+            sum += (j !=k ) ? mat[i][j] + mat[i][k] :  mat[i][j];
         }
         return sum;
     }
