@@ -21,5 +21,13 @@ public class Leetcode_1572 {
                 {8,6,1,2}
         };
         System.out.println(diagonalSum(arr));
+        System.out.println( dutyFree(12,50,1000));
+
+    }
+    public static int dutyFree(int normPrice, int discount, int hol) {
+
+
+
+        return (int) Math.floor( hol/((double)normPrice/100 * discount));
     }
 }
