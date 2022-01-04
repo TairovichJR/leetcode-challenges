@@ -1,5 +1,6 @@
 package linked_list;
 
+
 /**
  * Created by tairovich_jr on 2021-07-29.
  */
@@ -19,16 +20,3 @@ public class Leetcode_1290 {
 
 }
 
-class ListNode{
-
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) {
-        this.val = val;
-    }
-    ListNode(int val, ListNode next) {
-        this.val = val; this.next = next;
-    }
-
-}
