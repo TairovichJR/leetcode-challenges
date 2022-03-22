@@ -1,5 +1,6 @@
 package easy;
 
+
 /**
  * Created by tairovich_jr on 2022-03-22.
  */
