@@ -19,4 +19,8 @@ public class TriangularSumOfArray {
     public void doSomething(){
         System.out.println("jksdafh");
     }
+
+    public void soSomethingBad(){
+        System.out.println("dfasdhlaskdfj");
+    }
 }
