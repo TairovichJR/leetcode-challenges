@@ -15,4 +15,8 @@ public class TriangularSumOfArray {
     public static void main(String[] args) {
         System.out.println(triangularSum(new int[]{5}));
     }
+
+    public void doSomething(){
+        System.out.println("jksdafh");
+    }
 }
