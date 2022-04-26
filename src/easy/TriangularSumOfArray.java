@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.*;
+
 public class TriangularSumOfArray {
 
     public static int triangularSum(int[] nums) {
@@ -12,15 +14,6 @@ public class TriangularSumOfArray {
         return nums[0];
     }
 
-    public static void main(String[] args) {
-        System.out.println(triangularSum(new int[]{5}));
-    }
 
-    public void doSomething(){
-        System.out.println("jksdafh");
-    }
 
-    public void soSomethingBad(){
-        System.out.println("dfasdhlaskdfj");
-    }
 }
