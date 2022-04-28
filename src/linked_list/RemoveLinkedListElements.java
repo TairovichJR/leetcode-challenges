@@ -28,6 +28,15 @@ public class RemoveLinkedListElements {
         return head;
     }
 
+    public ListNode removeElementsRecursively(ListNode head, int val) {
+
+        if (head == null){
+            return head;
+        }
+        head.next = removeElements(head.next, val);
+        return (head.val == val) ? head.next : head;
+    }
+
     public static void main(String[] args) {
 
         ListNode node1 = new ListNode(2);
