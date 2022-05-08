@@ -11,6 +11,9 @@ public class ValidParentheses {
 
     public static boolean isValid(String s) {
 
+
+        s = s.replaceAll("[A-Za-z0-9!@#$%^&*':,<>=+-~`]","");
+
         Stack<Character> stack = new Stack<>();
 
         Map<Character, Character> map = new HashMap<>();
@@ -37,6 +40,10 @@ public class ValidParentheses {
 
 
         System.out.println(isValid("()"));
+
+        String str= "(jkf8454){565fgsdg!$%^&8}".replaceAll("[A-Za-z0-9!@#$%<>/?'^&*]","");
+        System.out.println(str);
+
 
     }
 
